@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page6 avec Bootstrap</title>
+    <!-- Lien vers le CSS Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Couleur de fond douce */
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        legend {
+            color: #007bff;
+            font-size: 1.2rem;
+        }
+        label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="form-container">
+            <form method="post" action="traitement.php">
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    <div class="form-group">
+                        <label for="nom">Quel est votre nom ?</label>
+                        <input type="text" class="form-control" name="nom" id="nom" tabindex="10" />
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Quel est votre prénom ?</label>
+                        <input type="text" class="form-control" name="prenom" id="prenom" tabindex="20" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Quel est votre e-mail ?</label>
+                        <input type="email" class="form-control" name="email" id="email" tabindex="30" />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Votre souhait</legend>
+                    <p>Faites un souhait que vous voudriez voir exaucé :</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="souhait" value="riche" id="riche" tabindex="40" />
+                        <label class="form-check-label" for="riche">Etre riche</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="souhait" value="celebre" id="celebre" tabindex="50" />
+                        <label class="form-check-label" for="celebre">Etre célèbre</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="souhait" value="intelligent" id="intelligent" tabindex="60" />
+                        <label class="form-check-label" for="intelligent">Etre encore plus intelligent</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="souhait" value="autre" id="autre" tabindex="70" />
+                        <label class="form-check-label" for="autre">Autre...</label>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="precisions">Si "Autre", veuillez préciser :</label>
+                        <textarea class="form-control" name="precisions" id="precisions" cols="40" rows="4" tabindex="80"></textarea>
+                    </div>
+                </fieldset>
+                <div class="mt-4 text-center">
+                    <button type="submit" class="btn btn-primary">Soumettre</button>
+                    <button type="reset" class="btn btn-secondary">Réinitialiser</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Lien vers le JS Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+</body>
+</html>

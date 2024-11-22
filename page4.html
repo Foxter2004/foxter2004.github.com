@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 4 - Listes et Styles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Style personnalisé */
+        body {
+            background-color: #f4f7fb;
+        }
+
+        .section-title {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        .list-container {
+            margin-top: 20px;
+        }
+
+        .list-container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .custom-list {
+            margin-left: 20px;
+        }
+
+        .custom-list li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body class="container">
+
+    <h1 class="text-center my-5">Exemples de Listes avec Bootstrap</h1>
+
+    <div class="list-container">
+        <h2 class="section-title">Liste non ordonnée simple</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Fraises</li>
+            <li class="list-group-item">Framboises</li>
+            <li class="list-group-item">Cerises</li>
+        </ul>
+    </div>
+
+    <div class="list-container">
+        <h2 class="section-title">Liste ordonnée</h2>
+        <ol class="list-group">
+            <li class="list-group-item">Je me lève</li>
+            <li class="list-group-item">Je mange et je bois</li>
+            <li class="list-group-item">Je retourne me coucher</li>
+        </ol>
+    </div>
+
+    <div class="list-container">
+        <h2 class="section-title">Liste avec retrait par défaut</h2>
+        <p>Voici une liste avec retrait (par défaut) :</p>
+        <ul class="list-group custom-list">
+            <li class="list-group-item">Liste<br />à puces</li>
+            <li class="list-group-item">Ligne 1<br />Ligne 2</li>
+            <li class="list-group-item">Vous pouvez voir<br />que le texte est décalé sur la droite</li>
+        </ul>
+    </div>
+
+    <div class="list-container">
+        <h2 class="section-title">Liste sans retrait</h2>
+        <p>Voici une liste sans retrait :</p>
+        <ul class="list-group" style="list-style-type: none;">
+            <li class="list-group-item">Liste<br />à puces</li>
+            <li class="list-group-item">Ligne 1<br />Ligne 2</li>
+            <li class="list-group-item">Vous pouvez voir<br />que le texte n'est pas décalé sur la droite</li>
+        </ul>
+    </div>
+
+    <div class="list-container">
+        <h2 class="section-title">Quelques listes non ordonnées personnalisées</h2>
+        <p>Voici une liste à puces non ordonnée sans modification (= <em>disc</em>) :</p>
+        <ul class="list-group">
+            <li class="list-group-item">Liste</li>
+            <li class="list-group-item">à</li>
+            <li class="list-group-item">puces</li>
+        </ul>
+
+        <p>Avec <em>circle</em> :</p>
+        <ul class="list-group" style="list-style-type: circle;">
+            <li class="list-group-item">Liste</li>
+            <li class="list-group-item">à</li>
+            <li class="list-group-item">puces</li>
+        </ul>
+
+        <p>Avec <em>square</em> :</p>
+        <ul class="list-group" style="list-style-type: square;">
+            <li class="list-group-item">Liste</li>
+            <li class="list-group-item">à</li>
+            <li class="list-group-item">puces</li>
+        </ul>
+
+        <p>Avec <em>none</em> (sans puces) :</p>
+        <ul class="list-group" style="list-style-type: none;">
+            <li class="list-group-item">Liste</li>
+            <li class="list-group-item">à</li>
+            <li class="list-group-item">puces</li>
+        </ul>
+    </div>
+
+    <div class="list-container">
+        <h2 class="section-title">Quelques listes ordonnées personnalisées</h2>
+        <p>Liste ordonnée sans modification (= <em>decimal</em>) :</p>
+        <ol class="list-group">
+            <li class="list-group-item">Un</li>
+            <li class="list-group-item">Deux</li>
+            <li class="list-group-item">Trois</li>
+            <li class="list-group-item">Quatre</li>
+        </ol>
+
+        <p>Avec <em>decimal-leading-zero</em> (<strong>Ne fonctionne pas sous IE</strong>) :</p>
+        <ol class="list-group" style="list-style-type: decimal-leading-zero;">
+            <li class="list-group-item">Un</li>
+            <li class="list-group-item">Deux</li>
+            <li class="list-group-item">Trois</li>
+            <li class="list-group-item">Quatre</li>
+        </ol>
+
+        <p>Avec <em>lower-alpha</em> :</p>
+        <ol class="list-group" style="list-style-type: lower-alpha;">
+            <li class="list-group-item">Un</li>
+            <li class="list-group-item">Deux</li>
+            <li class="list-group-item">Trois</li>
+            <li class="list-group-item">Quatre</li>
+        </ol>
+
+        <p>Avec <em>upper-roman</em> :</p>
+        <ol class="list-group" style="list-style-type: upper-roman;">
+            <li class="list-group-item">Un</li>
+            <li class="list-group-item">Deux</li>
+            <li class="list-group-item">Trois</li>
+            <li class="list-group-item">Quatre</li>
+        </ol>
+
+        <p>Avec <em>lower-greek</em> (<strong>Ne fonctionne pas sous IE</strong>) :</p>
+        <ol class="list-group" style="list-style-type: lower-greek;">
+            <li class="list-group-item">Un</li>
+            <li class="list-group-item">Deux</li>
+            <li class="list-group-item">Trois</li>
+            <li class="list-group-item">Quatre</li>
+        </ol>
+    </div>
+
+    <!-- Bootstrap JS (Optionnel pour les composants interactifs) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Professionnelle</title>
+    <!-- Lien vers Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f7f6; /* Fond neutre pour un look moderne et professionnel */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333; /* Couleur sombre pour une bonne lisibilité */
+        }
+
+        h1, h2 {
+            color: #1f3d7a; /* Bleu foncé pour les titres */
+            font-weight: 600; /* Plus de poids pour une hiérarchie claire */
+        }
+
+        .section-title {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #1f3d7a;
+            border-bottom: 2px solid #1f3d7a;
+            padding-bottom: 0.5rem;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .card-body {
+            padding: 2rem;
+        }
+
+        .card-header {
+            background-color: #1f3d7a;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .image-section img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar {
+            background-color: #1f3d7a;
+        }
+
+        .navbar-brand img {
+            width: 120px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #e2e2e2 !important;
+        }
+
+        .footer {
+            background-color: #1f3d7a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .image-section img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="https://pigier-benin.com/">
+            <img src="images/image5cb5dd69370d88.30831803.jpg" alt="logo pigier">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="page3.html">Page 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#classe2">Ma Description</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- Titre principal -->
+        <div class="text-center mb-5">
+            <h2 class="font-weight-bold">Bienvenue sur mon site professionnel</h2>
+        </div>
+
+        <!-- Section Etat Civil -->
+        <div class="section-title">I - État Civil</div>
+        <div class="card">
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li><strong>Nom:</strong> HOUINSOU</li>
+                    <li><strong>Prénom:</strong> <a href="#classe2" class="text-primary">Mario</a></li>
+                    <li><strong>Contact:</strong> 98179540</li>
+                    <li><strong>Filière:</strong> <a href="page3.html#classe1" class="text-primary">RGL</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Image personnelle -->
+        <div class="image-section text-center my-4">
+            <img src="images/WhatsApp Image 2024-10-16 à 01.55.32_9915d11b.jpg" alt="ma photo">
+        </div>
+
+        <!-- Section Diplômes -->
+        <div class="section-title">II - Mes Diplômes</div>
+        <div class="card">
+            <div class="card-body">
+                <ol>
+                    <li>CEP</li>
+                    <li>BEPC</li>
+                    <li>BAC</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Section Description -->
+        <div class="section-title">III - Ma Description</div>
+        <div class="card">
+            <div class="card-body">
+                <p id="classe2">
+                    Doté d'un baccalauréat série D, je suis actuellement étudiant en deuxième année de
+                    <a href="page3.html#classe1" class="text-primary">RGL</a> à Pigier Bénin. Passionné par l’informatique, j’ai développé des compétences solides en maintenance informatique, mobile et GSM, ce qui me permet de résoudre efficacement divers problèmes techniques. En plus de mon parcours académique, je suis une personne de rigueur et de principe, ce qui se reflète dans ma détermination à atteindre mes objectifs. En tant que coach sportif, j’accompagne des personnes dans leur quête de bien-être physique tout en servant de modèle à suivre. Je suis également mannequin et modèle photo, ce qui me permet d’explorer une autre facette de ma créativité tout en mettant en avant mon sens du style et de la discipline dans le milieu de la mode.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024, Mario HOUINSOU. Tous droits réservés.</p>
+    </div>
+
+    <!-- Lien vers les scripts Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

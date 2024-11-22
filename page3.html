@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3 - Pigier Benin</title>
+    <!-- Lien vers Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f7f6; /* Fond neutre pour un look moderne et propre */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: #1f3d7a;
+        }
+
+        .navbar-brand img {
+            width: 120px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #e2e2e2 !important;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #1f3d7a;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 2rem;
+            text-transform: uppercase;
+        }
+
+        .description {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .list-filiere {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        dl dt {
+            font-weight: bold;
+            color: #1f3d7a;
+        }
+
+        dl dd {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+        }
+
+        .footer {
+            background-color: #1f3d7a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .image-section img {
+            width: 100%;
+            max-width: 120px;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .image-section img {
+                max-width: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="https://pigier-benin.com/">
+            <img src="images/image5cb5dd69370d88.30831803.jpg" alt="Logo Pigier">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Page 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#classe1">Filières</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- Titre principal -->
+        <div class="text-center mb-5">
+            <h1 class="display-4 font-weight-bold">Pigier Benin</h1>
+            <h2 class="section-title">Description</h2>
+        </div>
+
+        <!-- Description de l'établissement -->
+        <div class="description">
+            <p>
+                Pigier Bénin est une institution d'enseignement supérieur privée située à Cotonou, offrant des formations professionnalisantes dans divers domaines tels que la gestion, l'informatique, le commerce, et les ressources humaines. Affiliée au réseau international Pigier, elle propose des diplômes comme le BTS et la Licence professionnelle, axés sur la pratique et l'insertion rapide sur le marché du travail. L'école se distingue par un encadrement rigoureux, une pédagogie moderne et des partenariats avec des entreprises locales et internationales. Les étudiants bénéficient de cours théoriques combinés à des stages pratiques, favorisant une immersion directe dans le monde professionnel. Pigier Bénin est reconnue pour sa capacité à former des professionnels qualifiés, grâce à une équipe pédagogique compétente et des équipements de pointe. Elle se positionne comme un acteur clé dans l'enseignement supérieur, permettant aux étudiants d'acquérir les compétences nécessaires pour réussir dans leurs carrières respectives.
+            </p>
+        </div>
+
+        <!-- Liste des filières -->
+        <h2 class="section-title">Liste des filières disponibles à Pigier Bénin</h2>
+        <div class="list-filiere">
+            <dl id="classe1">
+                <dt>AGR :</dt>
+                <dd>Agronomie</dd>
+                <dt>RMS :</dt>
+                <dd>Réseaux informatiques Mobilité et sécurité</dd>
+                <dt>RGL :</dt>
+                <dd>Réseaux et Génie Logiciel</dd>
+                <dt>GEC :</dt>
+                <dd>Génie Civil</dd>
+                <dt>ELT :</dt>
+                <dd>Electronique et Electrotechnique</dd>
+                <dt>BF :</dt>
+                <dd>Banque et Finance d'Entreprise</dd>
+                <dt>CG :</dt>
+                <dd>Audit et Contrôle de Gestion</dd>
+                <dt>EGP :</dt>
+                <dd>Entrepreneuriat et Gestion de Projets</dd>
+                <dt>CDM :</dt>
+                <dd>Communication Digitale et Web Marketing</dd>
+                <dt>CIB :</dt>
+                <dd>Commerce International et E-Business</dd>
+                <dt>MCM :</dt>
+                <dd>Marketing Communication et Multimedia</dd>
+                <dt>MRH :</dt>
+                <dd>Management des Ressources Humaines</dd>
+                <dt>GTL :</dt>
+                <dd>Gestion des Transports et Logistique</dd>
+                <dt>DCJ :</dt>
+                <dd>Droit des Affaires et Carrières Judiciaires</dd>
+            </dl>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024, Pigier Benin. Tous droits réservés.</p>
+    </div>
+
+    <!-- Lien vers les scripts Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

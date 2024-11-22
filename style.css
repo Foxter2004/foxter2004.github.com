@@ -1,0 +1,154 @@
+.pas_de_retrait
+{
+list-style-position: inside;
+}
+.retrait
+{
+list-style-position:
+outside;
+}
+
+/* Listes à puces non ordonnées */
+.cercle
+{
+list-style-type: circle;
+}
+.carre
+{
+list-style-type: square;
+}
+.rien
+{
+list-style-type: none;
+}
+
+.commence_a_zero
+{
+list-style-type: decimal-leading-zero;
+}
+.lettres_minuscules
+{
+list-style-type: lower-alpha;
+}
+.chiffres_romains
+{
+list-style-type: upper-roman;
+}
+.lettres_grecques
+{
+list-style-type: lower-greek;
+}
+/* Quelques styles supplémentaires juste pour la présentation
+En plus ça vous fait quelques rappels ;o) */
+h2
+{
+text-indent: 20px;
+font-family: Arial, Verdana, "Times New Roman", serif;
+}
+em
+{
+background-color: yellow;
+}
+strong
+{
+color: red;
+}
+
+td /* Toutes les cellules des tableaux... */
+{
+border: 1px solid black; /* ... auront une bordure de 1px */
+}
+
+.Admis
+{
+    background-color: green;
+}
+
+.Refuser
+{
+    background-color: red;
+}
+
+.enjambement
+{
+    background-color: yellow;
+}
+
+.contact
+{
+    color: blue;
+}
+
+.nom
+{
+    font-style: italic;
+}
+
+.bordure
+{
+    border: none;
+    border: 30px dashed blue;
+}
+
+color: white;
+    text-decoration: none; 
+}
+
+
+a:hover {
+    color: #cce5ff; 
+    text-decoration: underline; 
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .cv-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header, footer {
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+  }
+  
+  a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
